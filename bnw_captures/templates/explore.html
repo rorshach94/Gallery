@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>/* Reset some default styles */
+    body, h1, h2, p, img {
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Header styles */
+    header {
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      padding: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      padding: 5px;
+    }
+
+/* Active menu item styles */
+    nav ul li a.active {
+      background-color: #fff;
+      color: #333;
+      border-radius: 4px;
+    }
+
+    nav ul li a.active:hover {
+      background-color: #ddd;
+      color: #333;
+    }
+    
+     
+    .logo img {
+      font-size:80px;
+      height: 80px;
+      
+    }
+    
+    .menu-icons img {
+      height: 40px;
+      margin-left: 40px;
+    }
+    
+    /* Main content styles */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+    }
+    
+    .photo {
+      position: relative;
+      width: 600px;
+      height: 300px;
+      margin: 50px;
+      overflow: hidden;
+    }
+    
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease-in-out;
+      cursor: pointer;
+    }
+    
+    .photo .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .photo:hover img {
+      transform: scale(1.1);
+    }
+    
+    .photo:hover .overlay {
+      opacity: 1;
+    }
+    
+    .photo h2 {
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      padding: 10px;
+    }
+    
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Picture Gallery - Explore</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+          <li><a class="active" href="http://127.0.0.1:8000/home/">Home</a></li>
+          <li><a href="http://127.0.0.1:8000/explore/">Explore</a></li>
+          <li><a href="http://127.0.0.1:8000/about/">About</a></li>
+          <li><a href="http://127.0.0.1:8000/contact">Contact</a></li>
+      </ul>
+
+
+    <div class="logo">
+      <img src="https://www.analoguetrash.com/wp-content/uploads/2017/12/albumcover.jpg" width="100">
+         
+    </div>
+
+
+
+  </nav>
+  </header>
+
+  <main>
+    <section class="gallery">
+      <div class="photo">
+        <a href="bnw_captures\templates\story1.html"><img src="https://c4.wallpaperflare.com/wallpaper/620/1012/882/digital-art-optical-illusion-monochrome-wallpaper-thumb.jpg">
+        <div class="overlay">
+          <h2>illusion</h2>
+        </div>
+      </div>
+      <div class="photo">
+        <a href="bnw_captures\templates\story2.html"><img src="https://www.tahniaroberts.com/wp-content/uploads/2020/08/pareidolia-heart-feather.jpg" alt="https://www.tahniaroberts.com/wp-content/uploads/2020/08/pareidolia-heart-feather.jpg">
+        <div class="overlay">
+          <h2>abstract</h2>
+        </div>
+      </div>
+      <div class="photo">
+        <a href="bnw_captures\templates\story3.html"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgLgQernTYr2b4ALUGl53ucQwSlBtwtyAYIEeZuEBX38Gg-xlMgfdvCgbVA4rzwK3VRZdtCJnIobSt56Se2AKTJIU5RI0ClJ9o-SSPTM_DlLaU_RECfCSpM4t5t49lplHtZofKzh5um69FQy-lkvkQXy-dv1Kc85No8bVzK-8iTTodCnhb-tgMmqXxWIg=w640-h640" alt="https://blogger.googleusercontent.com/img/a/AVvXsEgLgQernTYr2b4ALUGl53ucQwSlBtwtyAYIEeZuEBX38Gg-xlMgfdvCgbVA4rzwK3VRZdtCJnIobSt56Se2AKTJIU5RI0ClJ9o-SSPTM_DlLaU_RECfCSpM4t5t49lplHtZofKzh5um69FQy-lkvkQXy-dv1Kc85No8bVzK-8iTTodCnhb-tgMmqXxWIg=w640-h640">
+        <div class="overlay">
+          <h2>mandala</h2>
+        </div>
+      </div>
+
+      <div class="photo">
+        <a href="bnw_captures\templates\story4.html"><img src="https://cdn.images.express.co.uk/img/dynamic/78/674x400/9-11-falling-man-15-year-anniversary-709440.jpg" alt="https://cdn.images.express.co.uk/img/dynamic/78/674x400/9-11-falling-man-15-year-anniversary-709440.jpg">
+        <div class="overlay">
+          <h2>gothic</h2>
+        </div>
+      </div>
+
+      <div class="photo">
+        <a href="bnw_captures\templates\story5.html"><img src="https://wallpaperaccess.com/full/1540837.jpg" alt="https://wallpaperaccess.com/full/1540837.jpg">
+        <div class="overlay">
+          <h2>macabre</h2>
+        </div>
+      </div>
+
+      <div class="photo">
+        <a href="bnw_captures\templates\story6.html"><img src="https://www.shutterstock.com/shutterstock/videos/1054165448/thumb/4.jpg?ip=x480" alt="https://www.shutterstock.com/shutterstock/videos/1054165448/thumb/4.jpg?ip=x480">
+        <div class="overlay">
+          <h2>loop</h2>
+        </div>
+      </div>
+
+      <div class="photo">
+        <a href="bnw_captures\templates\story7.html"><img src="https://www.atheistrepublic.com/sites/default/files/Codex%20Gigas.png" alt="https://www.atheistrepublic.com/sites/default/files/Codex%20Gigas.png">
+        <div class="overlay">
+          <h2>manuscript</h2>
+        </div>
+      </div>
+
+      <div class="photo">
+        <a href="bnw_captures\templates\story8.html"><img src="https://wallpaperaccess.com/full/1365857.jpg" alt="https://wallpaperaccess.com/full/1365857.jpg">
+        <div class="overlay">
+          <h2>ghoul</h2>
+        </div>
+      </div>
+
+      <div class="photo">
+        <a href="bnw_captures\templates\story9.html"><img src="https://wallpapers.com/images/hd/cicada-3301-glitch-effect-a2a5prf4uqrvkii2.jpg" alt="https://wallpapers.com/images/hd/cicada-3301-glitch-effect-a2a5prf4uqrvkii2.jpg">
+        <div class="overlay">
+          <h2>darknet</h2>
+        </div>
+      </div>
+
+      <div class="photo">
+        <a href="bnw_captures\templates\story10.html"><img src="https://img.freepik.com/premium-photo/black-white-front-view-abstract-human-face-3d-rendering-cyborg-head-construction-artificial-intelligence-concept_634053-115.jpg" alt="https://img.freepik.com/premium-photo/black-white-front-view-abstract-human-face-3d-rendering-cyborg-head-construction-artificial-intelligence-concept_634053-115.jpg">
+        <div class="overlay">
+          <h2>ai</h2>
+        </div>
+      </div>
+      <!-- Add more photo containers as needed -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Picture Gallery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
